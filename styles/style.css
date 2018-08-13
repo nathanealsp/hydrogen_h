@@ -1,0 +1,8 @@
+/* SLIDERS */
+
+input[type=range] {
+background: red;
+padding:50px;
+width: 90px;
+transform: rotate(0.5turn);
+}
