@@ -1,16 +1,16 @@
-* {
+/* * {
   box-sizing: border-box;
-}
+} */
 
-body {
+/* body {
   width: 70%;
   margin: 0 auto;
-}
+} */
 
 /* SLIDERS */
 
 input[type=range] {
-  background: red;
+  /* background: red; */
 }
 
 label {
@@ -19,21 +19,50 @@ label {
 
 .heeder {
   padding: 0 10px 30px 0;
-  margin: 10px;
+  /* margin: 10px; */
 }
 
 ul {
+  padding: 0;
   display: grid;
+  grid-template-columns: repeat(2, 1fr);
   grid-gap: 5px;
-  border: 10px solid #ffc600;
+  /* border: 1px solid #ffc600; */
   border-radius: 5px;
 }
 
 li {
-  font-size: 25px;
+  display: grid;
+  font-size: 10px;
   list-style: none;
+  height: 50px;
+  padding: 5px;
   background: #ffc600;
-  padding: 15px;
+  border-radius: 5px;
+  grid-template-columns: 4fr 1fr;
+}
+
+li>h1 {
+  padding: 8px;
+}
+
+#delete {
+  width: 100%;
+  font-size: 10px;
+  height: 40px;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: grey;
+  border: 0;
+  /* background-color: #ffc600; */
+}
+
+#delete:hover {
+  color: black;
+  background-color: red;
 }
 
 input[type=text] {
@@ -45,12 +74,13 @@ input[type=text] {
   font-weight: bold;
 }
 
-button {
-  display: inline-block;
-  /* width: 150px; */
+#post {
   height: 50px;
-  font-weight: bolder;
+  letter-spacing: 1px;
+  font-size: 15px;
+  font-weight: bold;
   color: black;
+  border-radius: 5px;
   text-transform: uppercase;
   border: 0;
   background-color: #ffc600;
@@ -61,5 +91,4 @@ form {
   grid-gap: 450px;
   grid-template-columns: 4fr 1fr;
   width: 100%;
-  /* border: 2px solid red; */
 }
